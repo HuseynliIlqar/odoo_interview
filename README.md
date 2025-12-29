@@ -13,6 +13,8 @@ Modul üçün list və form view-lar hazırlanmış, istifadəçi interfeysində
 
 Model səviyyəsində sadə biznes qaydası (validation) tətbiq edilmişdir:
 
+Bu lahiyə python 3.12 ilə yazılıb və odoo 18 versiyası üçün nəzərdə tutulmuşdur.
+
 Modul işlək vəziyyətdədir və verilmiş tələbləri tam şəkildə qarşılayır.
 
 
