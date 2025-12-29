@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- FORM VIEW -->
+    <record id="view_transport_form" model="ir.ui.view">
+        <field name="name">transport.transport.form</field>
+        <field name="model">transport.transport</field>
+        <field name="arch" type="xml">
+            <form string="Transport">
+                <sheet>
+                    <group>
+                        <field name="carrier_id"/>
+                        <field name="delivery_date"/>
+                        <field name="from_location"/>
+                        <field name="to_location"/>
+                        <field name="product_id"/>
+                        <field name="transport_mode"/>
+                        <field name="incoterm_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- LIST VIEW (Odoo 18: tree -> list) -->
+    <record id="view_transport_list" model="ir.ui.view">
+        <field name="name">transport.transport.list</field>
+        <field name="model">transport.transport</field>
+        <field name="arch" type="xml">
+            <list string="Transports">
+                <field name="carrier_id"/>
+                <field name="delivery_date"/>
+                <field name="from_location"/>
+                <field name="to_location"/>
+                <field name="transport_mode"/>
+                <field name="incoterm_id"/>
+                <field name="product_id"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_transport" model="ir.actions.act_window">
+        <field name="name">Transports</field>
+        <field name="res_model">transport.transport</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- MENUS -->
+    <menuitem id="menu_transport_root" name="Transport" sequence="10"/>
+    <menuitem id="menu_transport_records" name="Transports"
+              parent="menu_transport_root" action="action_transport"/>
+
+</odoo>

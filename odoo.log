@@ -1,0 +1,50 @@
+2025-12-29 09:54:20,639 5776 INFO ? odoo: Odoo version 18.0 
+2025-12-29 09:54:20,639 5776 INFO ? odoo: Using configuration file at C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo.conf 
+2025-12-29 09:54:20,639 5776 INFO ? odoo: addons paths: ['C:\\Users\\Ilqar Huseynli\\OneDrive\\Desktop\\odoo\\odoo\\addons', 'c:\\users\\ilqar huseynli\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\users\\ilqar huseynli\\onedrive\\desktop\\odoo\\addons', 'c:\\users\\ilqar huseynli\\onedrive\\desktop\\odoo\\custom_addons', 'c:\\users\\ilqar huseynli\\onedrive\\desktop\\odoo\\odoo\\addons'] 
+2025-12-29 09:54:20,639 5776 INFO ? odoo: database: odoo@default:default 
+2025-12-29 09:54:20,748 5776 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-12-29 09:54:20,752 5776 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-12-29 09:54:20,961 5776 INFO ? odoo.service.server: HTTP service (werkzeug) running on ilqar:8069 
+2025-12-29 09:54:36,689 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:36] "GET / HTTP/1.1" 303 - 1 0.006 0.049
+2025-12-29 09:54:36,766 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:36] "GET /odoo HTTP/1.1" 303 - 2 0.008 0.065
+2025-12-29 09:54:37,493 5776 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\http.py", line 2571, in __call__
+    if self.get_static_file(httprequest.path):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\http.py", line 2470, in get_static_file
+    if (module not in self.statics or static != 'static' or not resource):
+                      ^^^^^^^^^^^^
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\tools\func.py", line 42, in __get__
+    value = self.fget(obj)
+            ^^^^^^^^^^^^^^
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\http.py", line 2439, in statics
+    for module in os.listdir(addons_path):
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\ilqar huseynli\\onedrive\\desktop\\odoo\\custom_addons'
+2025-12-29 09:54:37,494 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:37] "GET /web/database/selector HTTP/1.1" 500 - 1 0.003 0.591
+2025-12-29 09:54:37,936 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:37] "GET /favicon.ico HTTP/1.1" 404 - 1 0.003 0.036
+2025-12-29 09:54:39,134 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:39] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.004 0.035
+2025-12-29 09:54:46,234 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:46] "GET / HTTP/1.1" 303 - 1 0.003 0.031
+2025-12-29 09:54:46,415 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:46] "GET /odoo HTTP/1.1" 303 - 2 0.008 0.170
+2025-12-29 09:54:46,545 5776 ERROR ? odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\http.py", line 2571, in __call__
+    if self.get_static_file(httprequest.path):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\http.py", line 2470, in get_static_file
+    if (module not in self.statics or static != 'static' or not resource):
+                      ^^^^^^^^^^^^
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\tools\func.py", line 42, in __get__
+    value = self.fget(obj)
+            ^^^^^^^^^^^^^^
+  File "C:\Users\Ilqar Huseynli\OneDrive\Desktop\odoo\odoo\http.py", line 2439, in statics
+    for module in os.listdir(addons_path):
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\users\\ilqar huseynli\\onedrive\\desktop\\odoo\\custom_addons'
+2025-12-29 09:54:46,547 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:46] "GET /web/database/selector HTTP/1.1" 500 - 1 0.005 0.078
+2025-12-29 09:54:48,541 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:54:48] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.005 0.136
+2025-12-29 09:55:17,611 5776 INFO ? werkzeug: 127.0.0.1 - - [29/Dec/2025 09:55:17] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.005 0.033
+2025-12-29 09:56:21,655 5776 INFO ? odoo.service.server: Initiating shutdown 
+2025-12-29 09:56:21,655 5776 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-12-29 09:56:21,742 5776 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections  
