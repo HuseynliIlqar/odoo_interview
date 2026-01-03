@@ -22,3 +22,10 @@ Modul işlək vəziyyətdədir və verilmiş tələbləri tam şəkildə qarşı
 
 ![Transport List View](screenshots/img_1.png)
 
+![Transport List View](screenshots/img_2.png)
+
+![Transport List View](screenshots/img_3.png)
+
+![Transport List View](screenshots/img_4.png)
+
+![Transport List View](screenshots/img_5.png)
